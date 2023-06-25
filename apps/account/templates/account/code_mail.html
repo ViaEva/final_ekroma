@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        h1 {
+            font-size: 1.5em;
+            color: greenyellow;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        .message {
+            font-size: 1.2em;
+            color: #666;
+            margin: 0;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: red;
+            padding: 14px 20px;
+            margin: 8px 0;
+            /* border: ; */
+            cursor: pointer;
+
+            /* width: 100%; */
+        }
+        div{
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Thanks for registration</h1>
+    </div>  
+    <div>
+        <p class="message">
+            You have successfully registered on our website.<br>Please, click the button below to confirm your email address.
+        </p>
+    </div>
+    <div>
+        <a href="{{ activation_link }}"><button type="submit">Click</button></a>
+    </div>
+</body>
+</html>
+
+
